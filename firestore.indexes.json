@@ -1,4 +1,12 @@
 {
-  "indexes": [],
+  "indexes": [
+    {
+      "collectionId": "articles",
+      "fields": [
+        { "fieldPath": "tag", "mode": "ASCENDING" },
+        { "fieldPath": "publishedAt", "mode": "DESCENDING" }
+      ]
+    }
+  ],
   "fieldOverrides": []
 }
