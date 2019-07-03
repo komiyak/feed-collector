@@ -21,6 +21,10 @@ module.exports = {
   'rules': {
     'no-unused-vars': 'off',
     'no-return-assign': 'off',
-    'space-before-function-paren': ['error', 'never']
+    'space-before-function-paren': ['error', {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }]
   }
 }
