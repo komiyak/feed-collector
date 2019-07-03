@@ -92,11 +92,6 @@ const processScheduledFunction = async () => {
   console.log('Batch process ended')
 }
 
-exports.helloWorld = functions.https.onRequest(async (request, response) => {
-  await processScheduledFunction()
-  response.send('Hello from Firebase!')
-})
-
 exports.scheduledFunction = functions.pubsub.schedule('every 90 minutes').onRun((context) => {
   return processScheduledFunction()
 })
