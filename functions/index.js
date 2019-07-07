@@ -92,6 +92,6 @@ const processScheduledFunction = async () => {
   console.log('Batch process ended')
 }
 
-exports.scheduledFunction = functions.pubsub.schedule('every 90 minutes').onRun((context) => {
+exports.scheduledFunction = functions.pubsub.schedule('every 180 minutes').onRun((context) => {
   return processScheduledFunction()
 })
